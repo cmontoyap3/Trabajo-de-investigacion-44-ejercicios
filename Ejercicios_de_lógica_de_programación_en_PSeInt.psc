@@ -152,7 +152,7 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 							
 						Opcion "13":
 							
-							Mostrar ""
+							Ejercicio_13_de_21
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
@@ -752,7 +752,44 @@ Funcion CalcularCostoProduccionPrecioVenta(clave, materiaPrima)
     Escribir "El precio de venta del artículo es: ", precioVenta
 	
 FinFuncion
+
+Funcion Ejercicio_13_de_21
 	
+	Definir N, DigitosCadena como entero
+	
+	Escribir "Ingrese un número entero: "
+	Leer N
+	
+	DigitosDentroDeNumero(N, DigitosCadena)
+	
+FinFuncion
+
+Funcion DigitosDentroDeNumero(N, DigitosCadena)
+	
+	DigitosCadena = Longitud(ConvertirATexto(N))
+	
+	Escribir "El número ", N, " tiene ", DigitosCadena, " dígitos."
+	
+FinFuncion
+
+Funcion Ejercicio_13_de_21
+	
+	Definir N, DigitosCadena como entero
+	
+	Escribir "Ingrese un número entero: "
+	Leer N
+	
+	DigitosDentroDeNumero(N, DigitosCadena)
+	
+FinFuncion
+
+Funcion DigitosDentroDeNumero(N, DigitosCadena)
+	
+	DigitosCadena = Longitud(ConvertirATexto(N))
+	
+	Escribir "El número ", N, " tiene ", DigitosCadena, " dígitos."
+	
+FinFuncion
 
 Funcion numm<-numcapicua(num)
 	numm<-trunc(num/100);
