@@ -158,49 +158,104 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 							
 						Opcion "14":
 							
-							Mostrar ""
+							//Dado un número, determine si es capicúa.
+//Nota: un número capicúa es aquel que se lee igual hacia adelante que hacia atrás.
+	Definir num, c, x Como Entero
+	Escribir "Ingrese una número de tres dígitos para determinar si es capicúa"
+	Leer num;
+	c<-numcapicua(num);
+	x<-numcapicuaa(num);
+	Si c==x Entonces
+		Escribir "El número ", num, " si es capicúa"
+	SiNo
+		Escribir "El número ", num, " no es capicúa"
+	Fin Si
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "15":
 							
-							Mostrar ""
+							//Escribir un algoritmo que presente los divisores de un numero
+	Definir nume, ind Como Entero
+	Escribir "Ingrese un número para mostrar sus divisores"
+	Leer nume;
+	ind<-divisores(nume);
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "16":
 							
-							Mostrar ""
+							//Escribir un algoritmo que presente la suma de los divisores de un numero
+	Definir number, indcc, sum Como Entero
+	sum=1;
+	Escribir "Ingrese un número"
+	Leer number;
+	indcc<-sumdiv(number);
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "17":
 							
-							Mostrar ""
+							ejercicio_17
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "18":
 							
-							Mostrar ""
+							ejercicio_18
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "19":
 							
-							Mostrar ""
+							ejercicio_19
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "20":
 							
-							Mostrar ""
+							//EJERCICIO 20, HE USADO 2 FUNCIONES CON PARAMETROS Y RETORNO
+        Definir answer1, answer2, numgem, primonum1, primonum2, absolute Como Entero;
+	Escribir "----------Indicador de Primos Gemelos-----------";
+	Escribir "Ingrese primer numero";
+	Leer answer1;
+	Escribir "Ingrese segundo numero";
+	Leer answer2;
+	primonum1<-primosGemelos1(answer1);
+	primonum2<-primosGemelos2(answer2);
+	numgem=primonum1-primonum2;
+	Si numgem<0 Entonces
+		absolute=-1*(numgem);
+	Sino 
+		absolute=numgem;
+		
+	FinSi
+	Si absolute=2 Entonces
+		Escribir "Se ha determinado que son primos gemelos";
+	SiNo
+		Escribir "Se ha determinado que no son primos gemelos";
+	FinSi
+	//AQUI TERMINA EL EJERCICIO 20 DE NUMEROS.
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "21":
 							
-							Mostrar ""
+							//Aqui empieza el EJERCICIO 21, donde se ha usado de igual manera dos funciones con retorno y parametro.
+	Definir r1, r2, pfriend, pfriend2, amigazazo como entero;
+	Escribir "-------Indicador de Primos amigos------";
+	Escribir "Ingrese el primer numero";
+	Leer r1;
+	Escribir "Ingrese el segundo numero";
+	Leer r2;
+	pfriend<-primosAmigos1(r1);
+	pfriend2<-primosAmigos2(r2);
+	Si pfriend=pfriend2 Entonces
+		Escribir "Los numeros ingresados ", r1, " y ", r2, " son primos amigos.";
+	SiNo
+		Escribir "Los numeros ingresados ", r1, " y ", r2, " no son primos amigos";
+	FinSi
+	//FIN DEL EJERCICIO 21.
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
@@ -595,6 +650,134 @@ FinFuncion
 
 //Funcion Numeros
 
+
+
+Funcion numm<-numcapicua(num)
+	numm<-trunc(num/100);
+FinFuncion
+Funcion nummm<-numcapicuaa(num)
+	numm<-num%10;
+FinFuncion
+
+
+Funcion code<-divisores(nume)
+	Para i<-1 Hasta nume Con Paso 1 Hacer
+		Si (nume%i)=0 Entonces
+			Escribir i;
+		Fin Si
+	Fin Para
+FinFuncion
+
+
+Funcion codee<-sumdiv(numer)
+	Para indc<-2 Hasta numer Con Paso 1 Hacer
+		Si numer % indc==0 Entonces
+			Escribir indc;
+			sum<-sum+indc;
+		FinSi
+	Fin Para
+	Escribir "El total de la suma de los divisores del número ingresado es: ", sum;
+FinFuncion
+
+Funcion ejercicio_17
+	//17) Escribir un algoritmo que presente la cantidad de los divisores de un numero CON PARAMETROS RETORNO Y REUTILIZACION 
+	definir n , i , divisores Como Entero
+	n<- numero_positivo
+	divisores<- divisores_de_numero(n, perfecto)
+	Escribir "La cantidad de divisores de ", n, " es: ", divisores
+FinFuncion
+
+Funcion ejercicio_18
+	// Escribir un algoritmo que indique si un número es perfecto
+	//Nota: un número es perfecto cuando la suma de los divisores del número incluido el 1 y
+	//excluido el propio número es igual al numero
+	//Ejemplo: numero=6: los divisores del 6 son: 1+2+3=6
+	definir n , i , perfecto, divisores Como Entero
+	n<- numero_positivo
+	divisores<- divisores_de_numero(n, perfecto)
+	si perfecto = n Entonces
+		Escribir n," es perfecto"
+	SiNo
+		Escribir n, " no es perfecto" 
+	FinSi
+FinFuncion
+
+funcion ejercicio_19
+	// Dado un número N determinar si es un número primo.
+	//Nota: Un número primo es aquel que solo es divisible por 1(uno) y por el mismo.
+	definir n , i , divisores Como Entero
+	n<- numero_positivo
+	divisores<- divisores_de_numero(n, perfecto)
+	si divisores = 2 Entonces
+		Escribir n," es primo"
+	SiNo
+		Escribir n, " no es primo"
+	FinSi
+Funcion divisores<- divisores_de_numero(n, perfecto Por Referencia)
+	definir divisores, i Como Entero
+	divisores<-0
+	perfecto=0
+	para i<-1 hasta n Hacer
+		si n mod i = 0 Entonces
+			Escribir i, " es divisible entre ", n
+			divisores= divisores + 1
+			perfecto= perfecto + (n/i)
+		FinSi
+	FinPara
+	perfecto= perfecto-n
+FinFuncion
+
+Funcion NumIng<- numero_positivo
+	definir NumIng Como Entero
+	Repetir
+		Escribir Sin Saltar"Ingrese un numero positivo: "
+		leer NumIng
+	Hasta Que NumIng>0
+	//0 es divisor infinito
+FinFuncion
+
+Funcion primo1<-primosGemelos1(ans1)
+	Para indicador<-1 Hasta ans1 Con Paso 1 Hacer
+		final<-ans1/indicador;
+		Si final=1 o final=ans1 Entonces
+			contador1=contador1+1;
+		FinSi
+		Si contador1=2 Entonces
+			primo1=ans1;
+		FinSi
+	Fin Para
+FinFuncion
+
+
+Funcion primo2<-primosGemelos2(ans2)
+	Para indicador2<-1 Hasta ans2 Con Paso 1 Hacer
+		final2<-ans2/indicador2;
+		Si final2=1 o final2=ans2 Entonces
+			contador2=contador2+1;
+		FinSi
+		Si contador2=2 Entonces
+			primo2=ans2;
+		FinSi
+	Fin Para
+FinFuncion
+
+Funcion Pamigo<-primosAmigos1(respuesta)
+	Para i<-1 Hasta respuesta-1 Con Paso 1 Hacer
+		xupapi<-respuesta%i;
+		Si xupapi=0 Entonces
+			Pamigo<-Pamigo+i;
+		FinSi
+	Fin Para
+FinFuncion
+
+Funcion Pamigo2<-primosAmigos2(respuesta2)
+	Para i2<-1 Hasta respuesta2-1 Con Paso 1 Hacer
+		xupapi2<-respuesta2%i2;
+		Si xupapi2=0 Entonces
+			Pamigo2<-Pamigo2+i2;
+		FinSi
+	Fin Para
+FinFuncion
 
 
 
