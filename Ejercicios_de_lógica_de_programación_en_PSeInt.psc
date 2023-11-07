@@ -528,25 +528,25 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 							
 						Opcion "20":
 							
-							Mostrar ""
+							ejercicio_20_de_23
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "21":
 							
-							Mostrar ""
+							Ejercicio_21_de_23
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "22":
 							
-							Mostrar ""
+							Ejercicio_22_de_23
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "23":
 							
-							Mostrar ""
+							Ejercicio_23_de_23
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
@@ -986,11 +986,156 @@ funcion ejercicio_19
 	Escribir "Cantidad de digitos: ", digitos1
 FinFuncion
 
+Funcion ejercicio_20_de_23
+	
+	Definir frase como Cadena;
+	Definir i, cantidad, contador como Entero;
+	espacios=0 // para contar los espacios.
+	cantidad=0 //Para contar los caracteres de la frase.
+	contador = 0
+	Escribir "Dime una frase."
+	Leer frase
+	cantidad=Longitud(frase)
+	
+	ContarPalabrasEnFrase(frase, espacios, cantidad, contador)
+	
+FinFuncion
 
+Funcion ContarPalabrasEnFrase(frase, espacios, cantidad, contador)
+	
+	Para i=0 Hasta cantidad-1 Con Paso 1 Hacer
+		Si Subcadena(frase, i,i)=" " Entonces
+			contador=contador+1
+		Finsi
+	FinPara
+	//Una frase tendrá siempre tantas palabras como espacios+1
+	Escribir "La frase tiene ", contador+1, " palabras."	
+	
+FinFuncion
 
+Funcion Ejercicio_21_de_23
+	
+	//21) Presentar la suma de los dígitos de una cedula
+	Definir Cedula como caracter
+	
+	Mostrar "Ingrese su numero de cédula para averiguar la suma de sus dígitos: "SinSaltar
+	Leer Cedula
+	
+	SumaDigitosCedula(Cedula)
+	
+FinFuncion
 
+Funcion SumaDigitosCedula(Cedula)
+	
+	
+	Cantidad = ConvertirANumero(Cedula)
+	
+	Si Longitud(Cedula) = 10
+		
+		Para i = 0 Hasta 9 Con Paso 1 Hacer
+			
+			Digitos = Digitos + (Cantidad mod 10)
+			Cantidad = trunc(Cantidad/10)
+			
+		Fin Para
+		
+		Mostrar "La suma de los dígitos de la cédula ingresada es de: ",Digitos
+		
+	FinSi
 
+	Si Longitud(Cedula) <> 10
+		
+		Mostrar "Dato inválido, (Una CI consta de 10 datos numéricos...)"
+		
+	FinSi
+	
+FinFuncion
 
+Funcion Ejercicio_22_de_23
+	
+	//Indicar si una palabra es palíndroma". Ejemplo: "ana" es palíndroma por se lee igual de 
+	//inicio a fin que de fin a inicio
+	
+	Definir frase, palindrome como caracter
+	Definir largo, i como entero
+	
+	Mostrar "Ingrese una frase: "Sin Saltar
+	Leer frase
+	
+	palindrome = ""
+	
+	PalabraPalindrome(frase,largo,palindrome)
+	
+FinFuncion
+
+Funcion PalabraPalindrome(frase,largo,palindrome)
+	
+	largo = Longitud(frase)
+	
+	Para i = largo Hasta 0 Con Paso -1 Hacer
+		
+		palindrome = palindrome + SubCadena (frase, i,i)
+		
+	FinPara
+	
+	Escribir palindrome
+	
+	Si frase = palindrome Entonces
+		
+		Mostrar "Es palíndromo"
+		
+	SiNo
+		
+		Mostrar "No es palíndromo"
+		
+	FinSi
+	
+FinFuncion
+
+Funcion Ejercicio_23_de_23
+	
+	Definir Frase, Letra Como caracter
+	Definir Posicion, Noseencuentra como entero
+	
+    Escribir "Ingrese una frase: "SinSaltar
+    Leer Frase
+	
+    Escribir "Ingrese el carácter que desea buscar: "SinSaltar
+    Leer Letra
+	
+	Posicion = 0
+	Noseencuentra = 0
+	
+	PosicionDeCaracterEnCadena(Frase, Letra, Posicion)
+	
+FinFuncion
+
+Funcion PosicionDeCaracterEnCadena(Frase, Letra, Posicion)
+	
+	
+    Mientras Posicion < Longitud(Frase)
+		
+        Si Subcadena(Frase, Posicion, Posicion) = Letra Entonces
+			
+            Escribir "El carácter ", Letra, " se encuentra en la posición ",Posicion
+			
+		SiNo
+			
+			Noseencuentra = Noseencuentra + 1
+			
+		Fin Si
+		
+		Posicion =  Posicion + 1
+		
+	Fin Mientras
+	
+	Si Noseencuentra = Longitud(Frase)
+		
+		Mostrar "El caracter ingresado no se encuentra en la frase..."
+		
+	FinSi
+	
+FinFuncion
 
 
 
