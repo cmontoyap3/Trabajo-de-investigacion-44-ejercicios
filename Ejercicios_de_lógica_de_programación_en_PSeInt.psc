@@ -146,7 +146,7 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 							
 						Opcion "12":
 							
-							Mostrar ""
+							Ejercicio_12_de_21
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
@@ -703,6 +703,55 @@ Funcion EVALUARNUM(num)
 		Mostrar "El numero es impar"
 		
 	FinSi
+
+Funcion Ejercicio_12_de_21
+	
+	Definir clave, materiaPrima, costoManoObra, costoFabricacion, costoProduccion, precioVenta Como Real
+    
+    Escribir "Ingrese la clave del artículo (1, 2, 3, 4, 5 o 6): "
+    Leer clave
+    
+    Escribir "Ingrese el costo de la materia prima: "
+    Leer materiaPrima
+	
+	CalcularCostoProduccionPrecioVenta(clave, materiaPrima)
+	
+FinFuncion
+
+Funcion CalcularCostoProduccionPrecioVenta(clave, materiaPrima)
+	
+	Segun clave Hacer
+        Caso 1, 5:
+            costoManoObra <- 0.80 * materiaPrima
+        Caso 2, 6:
+            costoManoObra <- 0.85 * materiaPrima
+        Caso 3, 4:
+            costoManoObra <- 0.75 * materiaPrima
+        OtroCaso:
+            Escribir "Clave no válida."
+    FinSegun
+    
+    // Calcular el costo de fabricación
+    Segun clave Hacer
+        Caso 1, 4:
+            costoFabricacion <- 0.28 * materiaPrima
+        Caso 2, 5:
+            costoFabricacion <- 0.30 * materiaPrima
+        Caso 3, 6:
+            costoFabricacion <- 0.35 * materiaPrima
+        OtroCaso:
+            Escribir "Clave no válida."
+    FinSegun
+    
+    // Calcular el costo de producción
+    costoProduccion = materiaPrima + costoManoObra + costoFabricacion
+    
+    // Calcular el precio de venta
+    precioVenta = costoProduccion + 0.45 * costoProduccion
+    
+    Escribir "El precio de venta del artículo es: ", precioVenta
+	
+FinFuncion
 	
 
 Funcion numm<-numcapicua(num)
