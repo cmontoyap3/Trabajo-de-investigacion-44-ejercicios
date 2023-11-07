@@ -140,7 +140,7 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 							
 						Opcion "11":
 							
-							Mostrar ""
+							Ejercicio_11_de_21
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
@@ -651,6 +651,59 @@ FinFuncion
 //Funcion Numeros
 
 
+Funcion Ejercicio_11_de_21
+	
+//	Pedir al usuario un número y mostrar si es par menor que 10, sino mostrar si es negativo e
+//	impar o negativo divisible para 5.
+	
+	Definir num como real
+	
+	Mostrar "Ingrese un numero a evaluar: "
+	Leer num
+	EVALUARNUM(num)
+	
+FinFuncion
+
+Funcion EVALUARNUM(num)
+	
+	Si num < 10 Entonces
+		
+		Mostrar "El numero ingresado es menor a 10..."
+		
+	SiNo
+		
+		Si num > 10 Entonces
+			
+			Mostrar "El numero ingresado es mayor a 10..."
+			
+		SiNo
+			
+			Mostrar "El numero ingresado es igual a 10..."
+			
+		FinSi
+		
+	FinSi
+	
+	Si num mod 5 = 0
+		
+		Mostrar "El numero ingresado es múltiplo de 5"
+		
+	SiNo
+		
+		Mostrar "El numero ingresado no es múltiplo de 5"
+		
+	FinSi
+	
+	Si num mod 2 ==0
+		
+		Mostrar "El numero es par"
+		
+	SiNo
+		
+		Mostrar "El numero es impar"
+		
+	FinSi
+	
 
 Funcion numm<-numcapicua(num)
 	numm<-trunc(num/100);
