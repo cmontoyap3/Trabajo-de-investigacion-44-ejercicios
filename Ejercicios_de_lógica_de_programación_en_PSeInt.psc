@@ -1,4 +1,4 @@
-Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
+Algoritmo Ejercicios_de_lÃ³gica_de_programaciÃ³n_en_PSeInt
 	
 	//Presentacion de menu principal de opciones de ejercicios y de salida
 	Definir Titulo, Menu, Op como caracter 
@@ -11,54 +11,54 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 	MenuPrincipal(2) = "3: Salir"
 	
 	//Menu Numeros del 1 al 20
-	CatNumeros(0)= "1: Determinar cuánto se debe pagar por cierta cantidad de colas..."
-	CatNumeros(1)= "2: La asociación de vinicultores tiene como política fijar un precio inicial al kilo de uva..."
-	CatNumeros(2)= "3: Dado dos números obtener el residuo sin el operador mod, %...."
-	CatNumeros(3)= "4: El consultorio del Dr. Paez tiene como política cobrar la consulta con base en el número de cita..."
-	CatNumeros(4)= "5: Escribir un algoritmo que lea cuatro números y determine si el numero 1 es la mitad del número 2; Y si el numero 3 es divisor del numero 4..."
-	CatNumeros(5)= "6: El banco XYZ ha decidido aumentar el límite de crédito de las tarjetas de crédito de sus clientes..."
-	CatNumeros(6)= "7: Escribir un algoritmo que lea cuatro números y determine si el numero 1 es divisor del numero3 Y si el numero 2 es el doble del numero 4..."
-	CatNumeros(7)= "8: El banco POO ha decidido aumentar el límite de crédito de las tarjetas de crédito de sus clientes..."
-	CatNumeros(8)= "9: Pedir al usuario un número y mostrar si es negativo menor que -20, sino mostrar si es positivo par o impar múltiplo de 7..."
-	CatNumeros(9)= "10: La asociación de vinicultores tiene como política fijar un precio inicial al quintal de pitajaya..."
-	CatNumeros(10)= "11: Pedir al usuario un número y mostrar si es par menor que 10, sino mostrar si es negativo e impar o negativo divisible para 5..."
-	CatNumeros(11)= "12: Fábricas EL COMETA, produce artículos con claves (1, 2, 3, 4, 5 y 6). Se requiere un algoritmo para calcular los precios de venta..."
-	CatNumeros(12)= "13: Dado un número entero N, calcular e informar al usuario cuántos dígitos tiene dicho número..."
-	CatNumeros(13)= "14: Dado un número, determine si es capicúa..."
+	CatNumeros(0)= "1: Determinar cuÃ¡nto se debe pagar por cierta cantidad de colas..."
+	CatNumeros(1)= "2: La asociaciÃ³n de vinicultores tiene como polÃ­tica fijar un precio inicial al kilo de uva..."
+	CatNumeros(2)= "3: Dado dos nÃºmeros obtener el residuo sin el operador mod, %...."
+	CatNumeros(3)= "4: El consultorio del Dr. Paez tiene como polÃ­tica cobrar la consulta con base en el nÃºmero de cita..."
+	CatNumeros(4)= "5: Escribir un algoritmo que lea cuatro nÃºmeros y determine si el numero 1 es la mitad del nÃºmero 2; Y si el numero 3 es divisor del numero 4..."
+	CatNumeros(5)= "6: El banco XYZ ha decidido aumentar el lÃ­mite de crÃ©dito de las tarjetas de crÃ©dito de sus clientes..."
+	CatNumeros(6)= "7: Escribir un algoritmo que lea cuatro nÃºmeros y determine si el numero 1 es divisor del numero3 Y si el numero 2 es el doble del numero 4..."
+	CatNumeros(7)= "8: El banco POO ha decidido aumentar el lÃ­mite de crÃ©dito de las tarjetas de crÃ©dito de sus clientes..."
+	CatNumeros(8)= "9: Pedir al usuario un nÃºmero y mostrar si es negativo menor que -20, sino mostrar si es positivo par o impar mÃºltiplo de 7..."
+	CatNumeros(9)= "10: La asociaciÃ³n de vinicultores tiene como polÃ­tica fijar un precio inicial al quintal de pitajaya..."
+	CatNumeros(10)= "11: Pedir al usuario un nÃºmero y mostrar si es par menor que 10, sino mostrar si es negativo e impar o negativo divisible para 5..."
+	CatNumeros(11)= "12: FÃ¡bricas EL COMETA, produce artÃ­culos con claves (1, 2, 3, 4, 5 y 6). Se requiere un algoritmo para calcular los precios de venta..."
+	CatNumeros(12)= "13: Dado un nÃºmero entero N, calcular e informar al usuario cuÃ¡ntos dÃ­gitos tiene dicho nÃºmero..."
+	CatNumeros(13)= "14: Dado un nÃºmero, determine si es capicÃºa..."
 	CatNumeros(14)= "15: Escribir un algoritmo que presente los divisores de un numero..."
 	CatNumeros(15)= "16: Escribir un algoritmo que presente la suma de los divisores de un numero..."
 	CatNumeros(16)= "17: Escribir un algoritmo que presente la cantidad de los divisores de un numero..."
-	CatNumeros(17)= "18: Escribir un algoritmo que indique si un número es perfecto..."
-	CatNumeros(18)= "19: Dado un número N determinar si es un número primo..."
-	CatNumeros(19)= "20: Dado dos números determinar si son primos gemelos..."
-	CatNumeros(20)= "21: Dado dos números determinar si son primos amigos..."
-	CatNumeros(21)= "22: Volver al menú principal..."
+	CatNumeros(17)= "18: Escribir un algoritmo que indique si un nÃºmero es perfecto..."
+	CatNumeros(18)= "19: Dado un nÃºmero N determinar si es un nÃºmero primo..."
+	CatNumeros(19)= "20: Dado dos nÃºmeros determinar si son primos gemelos..."
+	CatNumeros(20)= "21: Dado dos nÃºmeros determinar si son primos amigos..."
+	CatNumeros(21)= "22: Volver al menÃº principal..."
 	
 	//Menu numeros del 1 al 23
 	CatArreglos(0)= "1: Dada n realizar un algoritmo que presente la siguiente secuencia...Modelo1"
-	CatArreglos(1)= "2: Implementa un programa que calcule el promedio de los elementos pares e impares en un arreglo de números enteros y los copie en otro arreglo."
+	CatArreglos(1)= "2: Implementa un programa que calcule el promedio de los elementos pares e impares en un arreglo de nÃºmeros enteros y los copie en otro arreglo."
 	CatArreglos(2)= "3: Dada n realizar un algoritmo que presente la siguiente secuencia...Modelo2"
-	CatArreglos(3)= "4: Implementa un programa que copie los números de un arreglo a 2 arreglos en uno los números positivos y en el otro los negativos..."
-	CatArreglos(4)= "5: Leer una secuencia de números hasta que se ingrese un numero negativo, mostrar la suma de los pares y la cantidad de los números que son múltiplo de 3..."
-	CatArreglos(5)= "6: Leer una secuencia de números hasta que se ingrese un 0 y almacenarlos en un arreglo. Se pide recorrer el arreglo y mostrar la suma del cuadrado de cada numero..."
-	CatArreglos(6)= "7: Leer una secuencia de números hasta que se ingrese un numero par. La cantidad de los números mayores a 5 y la suma de los múltiplos de 5..."
-	CatArreglos(7)= "8: Leer una secuencia de números hasta que se ingrese un numero negativo y almacenarlos en un arreglo. Se pide recorrer el arreglo y mostrar la suma de cada número elevado al cubo..."
+	CatArreglos(3)= "4: Implementa un programa que copie los nÃºmeros de un arreglo a 2 arreglos en uno los nÃºmeros positivos y en el otro los negativos..."
+	CatArreglos(4)= "5: Leer una secuencia de nÃºmeros hasta que se ingrese un numero negativo, mostrar la suma de los pares y la cantidad de los nÃºmeros que son mÃºltiplo de 3..."
+	CatArreglos(5)= "6: Leer una secuencia de nÃºmeros hasta que se ingrese un 0 y almacenarlos en un arreglo. Se pide recorrer el arreglo y mostrar la suma del cuadrado de cada numero..."
+	CatArreglos(6)= "7: Leer una secuencia de nÃºmeros hasta que se ingrese un numero par. La cantidad de los nÃºmeros mayores a 5 y la suma de los mÃºltiplos de 5..."
+	CatArreglos(7)= "8: Leer una secuencia de nÃºmeros hasta que se ingrese un numero negativo y almacenarlos en un arreglo. Se pide recorrer el arreglo y mostrar la suma de cada nÃºmero elevado al cubo..."
 	CatArreglos(8)= "9: Dado una frase indicar cuantas palabras tiene..."
-	CatArreglos(9)= "10: Leer una secuencia de números hasta que se ingrese un numero negativo y almacenarlos en arreglo. Se pide recorrer el arreglo y cambiar cada elemento del arreglo por su doble..."
-	CatArreglos(10)= "11: Leer una secuencia de caracteres hasta que se ingrese un punto. Deberá mostrar cuantos x se ingresaron..."
-	CatArreglos(11)= "12: Leer una secuencia de números hasta que se ingrese un 0 y almacenarlos en arreglo. Se pide recorrer el arreglo y pasar a otro arreglo solo los números pares de cada elemento del arreglo 1..."
-	CatArreglos(12)= "13: Dado dos números presentar los valores mayores a 5 entre ellos incluidos el numero inicial y final"
+	CatArreglos(9)= "10: Leer una secuencia de nÃºmeros hasta que se ingrese un numero negativo y almacenarlos en arreglo. Se pide recorrer el arreglo y cambiar cada elemento del arreglo por su doble..."
+	CatArreglos(10)= "11: Leer una secuencia de caracteres hasta que se ingrese un punto. DeberÃ¡ mostrar cuantos x se ingresaron..."
+	CatArreglos(11)= "12: Leer una secuencia de nÃºmeros hasta que se ingrese un 0 y almacenarlos en arreglo. Se pide recorrer el arreglo y pasar a otro arreglo solo los nÃºmeros pares de cada elemento del arreglo 1..."
+	CatArreglos(12)= "13: Dado dos nÃºmeros presentar los valores mayores a 5 entre ellos incluidos el numero inicial y final"
 	CatArreglos(13)= "14: Elaborar un algoritmo que lea una serie de edades de los alumnos de la facultad FACI y los guarde en un arreglo..."
-	CatArreglos(14)= "15: Dado dos números presentar los valores Impares comprendidos entre ellos (excluidos el valor inicial y final)..."
+	CatArreglos(14)= "15: Dado dos nÃºmeros presentar los valores Impares comprendidos entre ellos (excluidos el valor inicial y final)..."
 	CatArreglos(15)= "16: Elaborar un algoritmo que lea una serie de sueldos de los empleados de la unemi y los guarde en un arreglo..."
 	CatArreglos(16)= "17: Dadas dos frase indicar la de mayor longitud..."
 	CatArreglos(17)= "18: Indicar cuantas , . ; : hay en una cadena..."
-	CatArreglos(18)= "19: Dado una cadena indicar cuantas vocales, consonantes y dígitos hay..."
+	CatArreglos(18)= "19: Dado una cadena indicar cuantas vocales, consonantes y dÃ­gitos hay..."
 	CatArreglos(19)= "20: Indicar cuantas palabras hay en una frase asumiendo 1 o varios espacios entre palabras..."
-	CatArreglos(20)= "21: Presentar la suma de los dígitos de una cedula..."
-	CatArreglos(21)= "22: Indicar si una palabra es palíndroma. Ejemplo: ana. Es palíndroma por se lee igual de inicio a fin que de fin a inicio..."
-	CatArreglos(22)= "23: Presentar la posición de un carácter cualquiera dentro de una cadena..."
-	CatArreglos(23)= "24: Volver al menú principal..."
+	CatArreglos(20)= "21: Presentar la suma de los dÃ­gitos de una cedula..."
+	CatArreglos(21)= "22: Indicar si una palabra es palÃ­ndroma. Ejemplo: ana. Es palÃ­ndroma por se lee igual de inicio a fin que de fin a inicio..."
+	CatArreglos(22)= "23: Presentar la posiciÃ³n de un carÃ¡cter cualquiera dentro de una cadena..."
+	CatArreglos(23)= "24: Volver al menÃº principal..."
 	
 	
 	Mientras Op <> "3" Hacer
@@ -206,7 +206,7 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 							
 						Opcion "22":
 							
-							Mostrar "Volviendo al menú principal..."
+							Mostrar "Volviendo al menÃº principal..."
 							Esperar 2 segundos
 							
 						De Otro Modo:
@@ -486,43 +486,43 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 							
 						Opcion "13":
 							
-							Mostrar ""
+							ejercicio_13
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "14":
 							
-							Mostrar ""
+							ejercicio_14
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "15":
 							
-							Mostrar ""
+							ejercicio_15
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "16":
 							
-							Mostrar ""
+							ejercicio_16
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "17":
 							
-							Mostrar ""
+							ejercicio_17
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "18":
 							
-							Mostrar ""
+							ejercicio_18
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "19":
 							
-							Mostrar ""
+							ejercicio_19
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
@@ -552,7 +552,7 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 							
 						Opcion "24":
 							
-							Mostrar "Volviendo al menú principal..."
+							Mostrar "Volviendo al menÃº principal..."
 							Esperar 5 segundos
 							
 						De Otro Modo:
@@ -569,7 +569,7 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 				Esperar 3 Segundos
 				
 			De Otro Modo:
-				Mostrar "Opcion inválida, vuelva a intentarlo..."
+				Mostrar "Opcion invÃ¡lida, vuelva a intentarlo..."
 				Esperar 3 Segundos
 				Limpiar Pantalla
 		Fin Segun
@@ -587,7 +587,7 @@ Funcion Op = PresentarMenu(Titulo,Menu,Limite)
 		Escribir Menu[Pos]
 		
 	Fin Para
-	Escribir "Elija opción[1..",Limite,"]" Sin Saltar
+	Escribir "Elija opciÃ³n[1..",Limite,"]" Sin Saltar
 	leer Op
 	
 FinFuncion
@@ -781,7 +781,210 @@ Funcion colocarparesnomas[numeron, conts]
 	Fin Para
 FinFuncion
 
+//Ejercicio 13 al 19
 
+funcion n<- numero_mayor(num1, num2, x)
+	definir n Como Entero
+	para n<- num1 Hasta num2 Hacer
+		si n>5 y x=1 Entonces
+			Escribir n
+		SiNo
+			si n mod 2 <> 0 y x=0 Entonces
+				Escribir n
+			FinSi
+		FinSi
+	FinPara
+FinFuncion
+
+Funcion acumulador<- acumulador_cant(cant, arreglo, cant1 por referencia, cant2 por referencia, acummayor18 por referencia, acummenor18 por referencia, max Por Referencia)
+	definir acumulador, i Como entero
+	max= arreglo[0]
+	para i<- 0 Hasta cant-1 Hacer
+		acumulador= acumulador + arreglo[i]
+		si arreglo[i]>=18 Entonces
+			cant1= cant1+1
+			acummayor18= acummayor18 + arreglo[i]
+		SiNo
+			cant2= cant2+1
+			acummenor18= acummenor18 + arreglo[i]
+		FinSi
+		si arreglo[i]>max Entonces
+			max<- arreglo[i]
+		FinSi
+	FinPara
+FinFuncion
+
+funcion almacenador<- contador_caracter(frase1, frase2, almacenador2 Por Referencia, almacenador3 Por Referencia, x, vocales1 Por Referencia, consonantes1 Por Referencia, digitos1 por referencia)
+	Definir contador, almacenador Como Entero
+	almacenador=0; almacenador2=0; almacenador3=0; vocales1=0; consonantes1=0; digitos1=0
+	Para contador=0 Hasta Longitud(frase1)-1 Con Paso 1 Hacer
+		caracteres_palabra = Subcadena(frase1, contador, contador)
+		si caracteres_palabra<> " " y x=0 Entonces
+			almacenador = almacenador +1
+		sino 
+			si caracteres_palabra = "," o caracteres_palabra ="." o caracteres_palabra =";" o caracteres_palabra =":" y x=1 Entonces
+				almacenador3 = almacenador3 +1
+			SiNo
+				si caracteres_palabra = "a" o caracteres_palabra ="e" o caracteres_palabra ="i" o caracteres_palabra ="o" o caracteres_palabra ="u" y x=2 Entonces
+					vocales1= vocales1 + 1
+				sino 
+						si  caracteres_palabra = "1" o  caracteres_palabra = "2" o  caracteres_palabra = "3" o  caracteres_palabra = "4" o  caracteres_palabra="5" o  caracteres_palabra = "6" o  caracteres_palabra= "7" o  caracteres_palabra = "8" o  caracteres_palabra = "9" o  caracteres_palabra = "0"  y x=2 Entonces
+							digitos1= digitos1 + 1
+						SiNo
+							consonantes1= consonantes1+1
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	Fin Para
+	Para contador=0 Hasta Longitud(frase2)-1 Con Paso 1 Hacer
+		caracteres_palabra = Subcadena(frase2, contador, contador)
+		si caracteres_palabra<> " " y x=0 Entonces
+			almacenador2 = almacenador2 +1
+		FinSi
+	Fin Para
+FinFuncion
+
+funcion ejercicio_13
+//Dado dos nÃºmeros presentar los valores mayores a 5 entre ellos incluidos el numero inicial y final
+//Ejemplo: numero1=2 numero2=10
+//salida= 6 7 8 9 10
+	definir n1, n2, n, x Como Entero
+	x=1
+	Escribir Sin Saltar "Ingrese un numero: "
+	leer n1
+	Repetir
+		Escribir Sin Saltar "Ingrese un numero mayor al anterior: "
+		leer n2
+	Hasta Que n2>n1
+	n<- numero_mayor(n1, n2, x)
+FinFuncion
+
+funcion ejercicio_14
+	//Elaborar un algoritmo que lea una serie de edades de los alumnos de la facultad FACI y
+	//los guarde en un arreglo. Se pide:
+	//calcular el promedio general de las edades de los alumnos
+	//La cantidad y el promedio de las edades mayores o iguales a 18
+	//La cantidad y el promedio de las edades menores a 18
+//Ejemplo:
+	//Edades=[20,17,20,23]
+	//promedioGeneral=20
+	//cantMayorIgual18= 3, promedioMayorIgual18=21
+	//cantMenor18= 1, promedioMenor18=17
+	definir alumnos, e, i Como Entero
+	Repetir
+		Escribir "Ingrese la cantidad de alumnos: "
+		leer alumnos
+	Hasta Que alumnos>0
+	dimension edades[alumnos]
+	para i<- 0 Hasta alumnos-1 Hacer
+		Repetir
+			Escribir Sin Saltar "Ingrese la edad del alumno ", i+1 ": "
+			leer e
+		Hasta Que e>=5
+		edades[i]<- e
+	FinPara
+	acumulador<- acumulador_cant(alumnos, edades, cant1 , cant2 , acummayor18 , acummenor18, max)
+	Escribir "El promedio de edades general es de: ", (acumulador/alumnos)
+	Escribir "La cantidad de estudiantes mayores o iguales a 18 es de: ", cant1
+	Escribir "El promedio de las edades de estudiantes mayores o iguales a 18 es de: ", (acummayor18/cant1)
+	Escribir "La cantidad de estudiantes menores a 18 es de: ", cant2
+	Escribir "El promedio de las edades de estudiantes menores a 18 es de: ", (acummenor18/cant2)
+FinFuncion
+
+funcion ejercicio_15
+	//Dado dos nÃºmeros presentar los valores Impares comprendidos entre ellos(excluidos el
+	//valor inicial y final)
+	//Ejemplo: numero1=2 numero2=11
+	//salida: 3 5 7 9
+	definir n1, n2, n, x Como Entero
+	x=0
+	Escribir Sin Saltar "Ingrese un numero: "
+	leer n1
+	Repetir
+		Escribir Sin Saltar "Ingrese un numero mayor al anterior: "
+		leer n2
+	Hasta Que n2>n1
+	n<- numero_mayor(n1, n2, x)
+FinFuncion
+
+Funcion ejercicio_16
+	//Elaborar un algoritmo que lea una serie de sueldos de los empleados de la unemi y los
+	//guarde en un arreglo. Se pide:
+	//Presentar el sueldo mÃ¡s alto de los empleados
+	//La cantidad y el promedio de os sueldos de los empleados
+	//Ejemplo:
+	//sueldos=[500,700,800,600]
+	//SueldoMasAlto= 800
+	//cantidadSueldos=4 promedioGeneral=650
+	definir empleados, s, i Como Entero
+	Repetir
+		Escribir "Ingrese la cantidad de empleados: "
+		leer empleados
+	Hasta Que empleados>0
+	dimension sueldos[empleados]
+	para i<- 0 Hasta empleados-1 Hacer
+		Repetir
+			Escribir Sin Saltar "Ingrese el sueldo del empleado numero ", i+1 ": "
+			leer s
+		Hasta Que s>0
+		sueldos[i]<- s
+	FinPara
+	acumulador<- acumulador_cant(empleados, sueldos, cant1 , cant2 , acummayor18 , acummenor18, max)
+	Limpiar Pantalla
+	Escribir "El sueldo mas alto es de: ", max
+	Escribir "La cantidad de sueldos es de: ", empleados
+	Escribir "El promedio general de los sueldos es de: ", (acumulador/empleados)
+FinFuncion
+
+Funcion ejercicio_17
+	// Dadas dos frase indicar la de mayor longitud"
+	definir frase1, frase2 Como Caracter
+	definir x Como Entero
+	x=0
+	Escribir "Ingrese una frase"
+	leer frase1
+	frase1  = Minusculas(frase1)
+	Escribir "Ingrese una segunda frase"
+	leer frase2
+	frase2 = Minusculas(frase2)
+	almacenador<- contador_caracter(frase1, frase2, almacenador2, almacenador3, x, vocales1 , consonantes1, digitos1)
+	si almacenador>almacenador2 Entonces
+		Escribir "La primera frase es mas larga", almacenador
+	SiNo
+		si almacenador<almacenador2 Entonces
+			Escribir "La segunda frase es mas larga", almacenador2
+		SiNo
+			Escribir "Ambas frases son igual de largas"
+		FinSi
+	FinSi
+FinFuncion
+
+Funcion ejercicio_18
+	//Indicar cuantas , . ; : hay en una cadena"
+	definir frase1 Como Caracter
+	definir x Como Entero
+	x=1
+	Escribir "Ingrese una frase"
+	leer frase1
+	frase1  = Minusculas(frase1)
+	almacenador<- contador_caracter(frase1, frase2, almacenador2, almacenador3, x, vocales1 , consonantes1, digitos1)
+	escribir "Su frase tiene , . ; : esta cantidad de veces: " ,almacenador3
+FinFuncion
+
+funcion ejercicio_19
+	//Dado una cadena indicar cuantas vocales, consonantes y dÃ­gitos hay
+	definir frase1 Como Caracter
+	definir x Como Entero
+	x=2
+	Escribir "Ingrese una frase"
+	leer frase1
+	frase1  = Minusculas(frase1)
+	almacenador<- contador_caracter(frase1, frase2, almacenador2, almacenador3, x, vocales1 , consonantes1, digitos1)
+	Escribir "Cantidad de consonantes: ", consonantes1
+	Escribir "Cantidad de vocales: ", vocales1
+	Escribir "Cantidad de digitos: ", digitos1
+FinFuncion
 
 
 
