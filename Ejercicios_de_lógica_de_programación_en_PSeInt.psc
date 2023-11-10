@@ -60,10 +60,8 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 	CatArreglos(22)= "23: Presentar la posición de un carácter cualquiera dentro de una cadena..."
 	CatArreglos(23)= "24: Volver al menú principal..."
 	
-	
 	Mientras Op <> "3" Hacer
 		
-		Borrar Pantalla
 		Op = PresentarMenu("Menu Principal",MenuPrincipal,3)
 		
 		Segun Op Hacer
@@ -74,67 +72,100 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 				
 				Mientras Op <> "22" Hacer       
 					
-					OpNumeros = PresentarMenu("Menu Numeros",CatNumeros,22)
-					
-					Segun OpNumeros Hacer
+					Segun Op Hacer
 						
 						Opcion "1":
 							
-							Mostrar ""
+							ejercicio_1num
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "2":
 							
-							Mostrar ""
+							ejercicio_2num
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "3":
 							
-							Mostrar ""
+							ejercicio_3num
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "4":
 							
-							Mostrar ""
+							//EJERCICIO 4 se uso parametro y retorno
+							Definir numberscitas, maskoff como entero;
+							Escribir "---Programa para costear el total del tratamiento---";
+							Leer numberscitas;
+							maskoff<-costeototalconsul(numberscitas);
+							Escribir "---Factura tratamiento---";
+							Escribir "Total $", maskoff;
+							Escribir "-------------------------";
+							Escribir "Gracias por preferir al Dr. Paez";
+							//FIN EJERCICIO 4
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "5":
 							
-							Mostrar ""
+							//EJERCICIO 5
+							Definir DMC, CT Como Entero;
+							Dimension DMC(4);
+							Escribir "--Analisis de 4 numeros--";
+							Escribir "Ingrese los datos que se le piden";
+							Para CT<-0 Hasta 3 Con Paso 1 Hacer
+								Escribir "Ingrese un numero";
+								Leer DMC(CT);
+							Fin Para
+							lamelodiadelacalle(DMC);
+							//FIN EJERCICIO 5
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "6":
 							
-							Mostrar ""
+							//EJERCICIO 6
+							Definir tiptaj, limtaj como entero;
+							Definir batman como real;
+							Escribir "            Banco XYZ         ";
+							Escribir "Felicidades estas adentro del programa de";
+							Escribir "aumento de limites de tarjetas de credito";
+							Escribir "-----------------------------------------";
+							Escribir "Ingrese su tipo de tarjeta (1, 2 o 3) o si es superior";
+							Leer tiptaj;
+							Escribir "Ingrese ahora cual es el limite que se le ha asignado anteriormente";
+							Leer limtaj;
+							batman<-losextraterrestres(tiptaj, limtaj);
+							Escribir "             Banco XYZ             ";
+							Escribir "-------------------------------------";
+							Escribir "Le asigna un cupo de $ ", batman;
+							Escribir "Disfrute!!";
+							//FIN EJERCICIO 6
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "7":
 							
-							Mostrar ""
+							Ejercicio_7_de_21
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "8":
 							
-							Mostrar ""
+							Ejercicio_8_de_21
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "9":
 							
-							Mostrar ""
+							Ejercicio_9_de_21
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "10":
 							
-							Mostrar ""
+							ejercicio_10num
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
@@ -159,103 +190,103 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 						Opcion "14":
 							
 							//Dado un número, determine si es capicúa.
-//Nota: un número capicúa es aquel que se lee igual hacia adelante que hacia atrás.
-	Definir num, c, x Como Entero
-	Escribir "Ingrese una número de tres dígitos para determinar si es capicúa"
-	Leer num;
-	c<-numcapicua(num);
-	x<-numcapicuaa(num);
-	Si c==x Entonces
-		Escribir "El número ", num, " si es capicúa"
-	SiNo
-		Escribir "El número ", num, " no es capicúa"
-	Fin Si
+							//Nota: un número capicúa es aquel que se lee igual hacia adelante que hacia atrás.
+							Definir num, c, x Como Entero
+							Escribir "Ingrese una número de tres dígitos para determinar si es capicúa"
+							Leer num;
+							c=numcapicua(num);
+							x=numcapicuaa(num);
+							Si c==x Entonces
+								Escribir "El número ", num, " si es capicúa"
+							SiNo
+								Escribir "El número ", num, " no es capicúa"
+							Fin Si
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "15":
 							
 							//Escribir un algoritmo que presente los divisores de un numero
-	Definir nume, ind Como Entero
-	Escribir "Ingrese un número para mostrar sus divisores"
-	Leer nume;
-	ind<-divisores(nume);
+							Definir nume, ind Como Entero
+							Escribir "Ingrese un número para mostrar sus divisores"
+							Leer nume;
+							ind<-divisores(nume);
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "16":
 							
 							//Escribir un algoritmo que presente la suma de los divisores de un numero
-	Definir number, indcc, sum Como Entero
-	sum=1;
-	Escribir "Ingrese un número"
-	Leer number;
-	indcc<-sumdiv(number);
+							Definir number, indcc, sum Como Entero
+							sum=1;
+							Escribir "Ingrese un número"
+							Leer number;
+							indcc<-sumdiv(number);
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "17":
 							
-							ejercicio_17
+							Ejercicio_17
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "18":
 							
-							ejercicio_18
+							Ejercicio_18
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "19":
 							
-							ejercicio_19
+							Ejercicio_19
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "20":
 							
 							//EJERCICIO 20, HE USADO 2 FUNCIONES CON PARAMETROS Y RETORNO
-        Definir answer1, answer2, numgem, primonum1, primonum2, absolute Como Entero;
-	Escribir "----------Indicador de Primos Gemelos-----------";
-	Escribir "Ingrese primer numero";
-	Leer answer1;
-	Escribir "Ingrese segundo numero";
-	Leer answer2;
-	primonum1<-primosGemelos1(answer1);
-	primonum2<-primosGemelos2(answer2);
-	numgem=primonum1-primonum2;
-	Si numgem<0 Entonces
-		absolute=-1*(numgem);
-	Sino 
-		absolute=numgem;
-		
-	FinSi
-	Si absolute=2 Entonces
-		Escribir "Se ha determinado que son primos gemelos";
-	SiNo
-		Escribir "Se ha determinado que no son primos gemelos";
-	FinSi
-	//AQUI TERMINA EL EJERCICIO 20 DE NUMEROS.
+							Definir answer1, answer2, numgem, primonum1, primonum2, absolute Como Entero;
+							Escribir "----------Indicador de Primos Gemelos-----------";
+							Escribir "Ingrese primer numero";
+							Leer answer1;
+							Escribir "Ingrese segundo numero";
+							Leer answer2;
+							primonum1<-primosGemelos1(answer1);
+							primonum2<-primosGemelos2(answer2);
+							numgem=primonum1-primonum2;
+							Si numgem<0 Entonces
+								absolute=-1*(numgem);
+							Sino 
+								absolute=numgem;
+								
+							FinSi
+							Si absolute=2 Entonces
+								Escribir "Se ha determinado que son primos gemelos";
+							SiNo
+								Escribir "Se ha determinado que no son primos gemelos";
+							FinSi
+							//AQUI TERMINA EL EJERCICIO 20 DE NUMEROS.
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
 						Opcion "21":
 							
 							//Aqui empieza el EJERCICIO 21, donde se ha usado de igual manera dos funciones con retorno y parametro.
-	Definir r1, r2, pfriend, pfriend2, amigazazo como entero;
-	Escribir "-------Indicador de Primos amigos------";
-	Escribir "Ingrese el primer numero";
-	Leer r1;
-	Escribir "Ingrese el segundo numero";
-	Leer r2;
-	pfriend<-primosAmigos1(r1);
-	pfriend2<-primosAmigos2(r2);
-	Si pfriend=pfriend2 Entonces
-		Escribir "Los numeros ingresados ", r1, " y ", r2, " son primos amigos.";
-	SiNo
-		Escribir "Los numeros ingresados ", r1, " y ", r2, " no son primos amigos";
-	FinSi
-	//FIN DEL EJERCICIO 21.
+							Definir r1, r2, pfriend, pfriend2, amigazazo como entero;
+							Escribir "-------Indicador de Primos amigos------";
+							Escribir "Ingrese el primer numero";
+							Leer r1;
+							Escribir "Ingrese el segundo numero";
+							Leer r2;
+							pfriend<-primosAmigos1(r1);
+							pfriend2<-primosAmigos2(r2);
+							Si pfriend=pfriend2 Entonces
+								Escribir "Los numeros ingresados ", r1, " y ", r2, " son primos amigos.";
+							SiNo
+								Escribir "Los numeros ingresados ", r1, " y ", r2, " no son primos amigos";
+							FinSi
+							//FIN DEL EJERCICIO 21.
 							Esperar 5 segundos
 							Limpiar Pantalla
 							
@@ -263,6 +294,7 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 							
 							Mostrar "Volviendo al menú principal..."
 							Esperar 2 segundos
+							Op = PresentarMenu("Menu Principal",MenuPrincipal,3)
 							
 						De Otro Modo:
 							
@@ -270,6 +302,9 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 							Esperar 2 segundos
 							
 					Fin Segun
+					
+					Op = PresentarMenu("Menu Numeros",CatNumeros,22)
+					
 				FinMientras
 				
 			Opcion "2":
@@ -278,9 +313,7 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 				
 				Mientras Op <> "24" Hacer       
 					
-					OpArreglos = PresentarMenu("Cadenas y Arreglos",CatArreglos,24)
-					
-					Segun OpArreglos Hacer
+					Segun Op Hacer
 						
 						Opcion "1":
 							
@@ -301,6 +334,7 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 							Dimension arreglinz(nindicador);
 							Dimension secondgr(nindicador);
 							Para botw<-1 Hasta nindicador Con Paso 1 Hacer
+								
 								Escribir "Ingresa numeros";
 								Leer arreglinz(botw);
 								
@@ -342,7 +376,7 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 						Opcion "5":
 							
 							//EJERCICIO 5
-							Definir twicearreglo, burpi, majoras, starfox, samus  Como Entero;'
+							Definir twicearreglo, burpi, majoras, starfox, samus  Como Entero;
 							Dimension twicearreglo(100);
 							Escribir "Se detendra de pedirte numeros si ingresas 0";
 							Mientras burpi=0 Hacer
@@ -608,14 +642,17 @@ Algoritmo Ejercicios_de_lógica_de_programación_en_PSeInt
 						Opcion "24":
 							
 							Mostrar "Volviendo al menú principal..."
-							Esperar 5 segundos
+							Esperar 2 segundos
+							Op = PresentarMenu("Menu Principal",MenuPrincipal,3)
 							
 						De Otro Modo:
 							
 							Mostrar "La opcion ingresada no existe, vuelva a intentarlo..."
 							Esperar 2 segundos
+							Op = PresentarMenu("Menu Principal",MenuPrincipal,3)
 							
-					Fin Segun
+					FinSegun
+					Op = PresentarMenu("Menu Cadenas y Arreglos",CatArreglos,24)
 				FinMientras
 				
 			Opcion "3":
@@ -647,8 +684,355 @@ Funcion Op = PresentarMenu(Titulo,Menu,Limite)
 	
 FinFuncion
 
-
 //Funcion Numeros
+//
+//
+//
+//
+
+funcion precio<- precio_cantidad (cantidad, preciocantidad Por Referencia, iva Por Referencia, precioiva Por Referencia)
+	definir precio Como Real
+	si cantidad>23 Entonces
+		precio= 0.50
+	SiNo
+		precio= 0.50+(0.50*0.2)
+	FinSi
+	preciocantidad= cantidad * precio
+	iva= preciocantidad * 0.12
+	precioiva= preciocantidad + iva
+FinFuncion
+
+funcion ejercicio_1num
+	//Determinar cuánto se debe pagar por cierta cantidad de colas, considerando que si son más
+	//de 23 colas, el costo por unidad es de $0,50 caso contrario el precio será 20% mas.
+	//Al costo resultante calcular el 12% del iva. Se pide presentar: cantidad comprada, el costo ´por
+	//unidad, el total sin iva el iva y el total a pagar.
+	definir cantidad Como Entero
+	definir precio Como Real
+	Repetir
+		Escribir sin saltar "Ingrese la cantidad de colas compradas: "
+		leer cantidad 
+	Hasta Que cantidad>0
+	precio<- precio_cantidad (cantidad, preciocantidad, iva , precioiva)
+	Escribir "La cantidad comprada es de: ", cantidad
+	Escribir "El costo por unidad es de: ", precio
+	Escribir "El total sin iva es de: ", preciocantidad
+	Escribir "El valor del iva es de: ", iva
+	Escribir "El total a pagar es de: ", precioiva
+FinFuncion
+
+
+Funcion ganancia<- ganancia_uva (tipo, taman)
+	si tipo = "a" o tipo= "A"
+		si taman = 1 Entonces
+			ganancia = 20 + 20
+		sino 
+			si taman = 2 Entonces
+				ganancia = 20 + 30
+			FinSi
+		FinSi
+	SiNo
+		si tipo = "b" o tipo = "B" Entonces
+			si taman = 1 Entonces
+				ganancia = 20 + 30
+			sino 
+				si taman = 2 Entonces
+					ganancia = 20 + 50
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+FinFuncion
+funcion ejercicio_2num
+	//La asociación de vinicultores tiene como política fijar un precio inicial al kilo
+	//de uva, la cual se clasifica en tipos A y B, y además en tamaños 1 y 2.
+	//Cuando se realiza la venta del producto, ésta es de un solo tipo y tamaño, se
+	//requiere determinar cuánto recibirá un productor por la uva que entrega en un
+	//embarque, considerando lo siguiente:Si es de tipo A, se le cargan 20 al precio
+	//inicial cuando es de tamaño 1; y 30 si es de tamaño 2. Si es de tipo B, se rebajan
+	//30 cuando es de tamaño 1, y 50 cuando es de tamaño 2.
+	//precio inicial = 20
+	//Realice un algoritmo para determinar la ganancia obtenida
+	definir tipo Como Caracter
+	definir taman Como Entero
+	Repetir
+		Escribir Sin Saltar "Ingrese el tipo de uva A o B: "
+		leer tipo
+	Hasta Que tipo = "a" o tipo= "A" o tipo = "b" o tipo = "B"
+	Repetir
+		Escribir Sin Saltar "Ingrese el tamaño de la uva 1 o 2: "
+		leer taman
+	Hasta Que taman = 1 o taman = 2
+	ganancia<- ganancia_uva (tipo, taman)
+	Escribir "El valor de ganancia fue de: ", ganancia
+FinFuncion
+
+
+Funcion resto<- resto_sinmod(num1, num2)
+	definir div, mult Como Real
+	div=trunc(num1/num2)
+	mult=div *num2 
+	resto=num1-mult
+FinFuncion
+Funcion ejercicio_3num
+	//Dado dos números obtener el residuo sin el operador mod, %
+	definir num1, num2 Como Entero
+	Escribir sin saltar "Ingrese el primer numero: "
+	leer num1
+	Escribir sin saltar "Ingrese el segundo numero: "
+	leer num2
+	resto<- resto_sinmod(num1, num2)
+	Escribir "El residuo de ",num1 "/",num2 " es: " ,resto
+FinFuncion
+
+
+//PARTE DEL EJERCICIO 4
+Funcion totalprizes<-costeototalconsul(numberscitas)
+	c=0;
+	Mientras c<=numberscitas Hacer
+		c=c+1;
+		Si c<=3 Entonces
+			totalprizes=totalprizes+200;
+			
+		FinSi
+		Si c>3 y c<=5 Entonces
+			totalprizes=totalprizes+150;
+		FinSi
+		Si c>5 y c<=8 Entonces
+			totalprizes=totalprizes+100;
+		FinSi
+		Si c>8 Entonces
+			totalprizes=totalprizes+50;
+		FinSi
+	Fin Mientras
+	
+FinFuncion
+
+//PARTE DEL EJERCICIO 5
+Funcion lamelodiadelacalle(DMC)
+	mitadpai=DMC(1)/2
+	Si mitadpai=DMC(0) Entonces
+		Escribir DMC(0), "es la mitad de ", DMC(1);
+	SiNo
+		Escribir DMC(0), "no es la mitad de ", DMC(1);
+	FinSi
+	panasutra=DMC(3)%DMC(2);
+	Si panasutra=0 Entonces
+		Escribir DMC(2), "es divisor de ", DMC(3);
+	SiNo
+		Escribir DMC(2), "no es divisor de ", DMC(3);
+	FinSi
+FinFuncion
+
+
+//PARTE DEL EJERCICIO 6
+Funcion limdefinitivo<-losextraterrestres(tiptaj, limtaj)
+	Si tiptaj=1 Entonces
+		porclimta=limtaj*0.25;
+	Sino
+		Si tiptaj=2 Entonces
+			porclimta=limtaj*0.35;
+		SiNo
+			Si tiptaj=3 Entonces
+				porclimta=limtaj*0.4;
+			SiNo
+				porclimta=limtaj*0.5;
+				
+			FinSi
+		FinSi
+	FinSi
+	limdefinitivo=limtaj+porclimta;
+	
+FinFuncion
+
+Funcion Ejercicio_7_de_21
+	
+	Definir num1, num2, num3, num4 como real
+	
+	Mostrar "Ingrese el valor de numero 1: "SinSaltar
+	Leer num1
+	
+	Mostrar "Ingrese el valor de numero 2: "SinSaltar
+	Leer num2
+	
+	Mostrar "Ingrese el valor de numero 3: "SinSaltar
+	Leer num3
+	
+	Mostrar "Ingrese el valor de numero 4: "SinSaltar
+	Leer num4
+	
+	EvaluacionDeNumeros(num1, num2, num3, num4)
+	
+FinFuncion
+
+Funcion EvaluacionDeNumeros(num1, num2, num3, num4)
+	
+	Si num3 = 0 entonces
+		
+		Mostrar "No es posible calcular una division entre 0"
+		
+	SiNo
+		Si (num1 mod num3 == 0) entonces
+			
+			Mostrar "El numero 1 es divisor del numero 3"
+			
+		Sino
+			
+			Mostrar "El numero 1 no es divisor del numero 3"
+			
+		Fin Si
+	FinSi
+	
+	Si (num2 == num4 * 2) entonces
+		
+	    Mostrar "El numero 2 es el doble del numero 4"
+		
+	Sino
+		
+		Mostrar "El numero 2 no es el doble del numero 4"
+		
+	Fin Si
+	
+FinFuncion
+
+Funcion Ejercicio_8_de_21
+	
+	Definir tipoTarjeta como Entero
+	
+    // Solicitar el tipo de tarjeta al usuario
+    Escribir "Ingrese el tipo de tarjeta (1, 2, 3 u otro):"
+    Leer tipoTarjeta
+	
+    aumentoTarjeta(tipoTarjeta)
+	
+FinFuncion
+
+Funcion aumentoTarjeta(tipoTarjeta)
+	
+	Definir aumento, nuevoLimite como entero
+	
+	// Determinar el aumento basado en el tipo de tarjeta
+    Segun tipoTarjeta Hacer
+        Caso 1:
+            aumento = 100
+        Caso 2:
+            aumento = 200
+        Caso 3:
+            aumento = 300
+        De Otro Modo:
+            aumento = 500
+    FinSegun
+	
+    // Calcular el nuevo límite de crédito con un 10% adicional
+    nuevoLimite = aumento + (aumento * 0.10)
+	
+    // Mostrar el nuevo límite de crédito
+	Escribir "Tipo de tarjeta: ",tipoTarjeta
+	Escribir "Aumento especificado: ",aumento
+    Escribir "El nuevo límite de crédito es:", nuevoLimite	
+	
+FinFuncion
+
+Funcion Ejercicio_9_de_21
+	
+//	Pedir al usuario un número y mostrar si es negativo menor que -20, sino mostrar si es
+//	positivo par o impar múltiplo de 7.
+	
+	Definir num como real
+	
+	Mostrar "Ingrese que numero se va a evaluar: "SinSaltar
+	Leer num
+	
+	MayoOMenoQue(num)
+	
+FinFuncion
+
+Funcion MayoOMenoQue(num)
+	
+	Si (num > -20)
+		Mostrar "El numero ingresado es mayor a -20..."
+	SiNo
+		Si(num < -20) 
+			Mostrar "El numero ingresado es menor a -20..."
+		SiNo
+			Mostrar "El numero ingresado es igual a -20..."
+		FinSi
+		
+	FinSi
+	
+	Si (num mod 2 == 0 ) entonces
+		
+	    Mostrar "El numero ingresado es par..."
+		
+	Sino
+		
+		Mostrar "El numero ingresado es impar..."
+		
+	Fin Si
+	
+	Si (num mod 7 == 0 ) entonces
+		
+	    Mostrar "El numero ingresado es múltiplo de 7..."
+		
+	Sino
+		
+		Mostrar "El numero ingresado NO es múltiplo de 7..."
+		
+	Fin Si
+	
+FinFuncion
+
+
+Funcion ganancia<- ganancia_pitajaya (tipo, taman )
+	si tipo = "amarilla"
+		si taman = 1 Entonces
+			ganancia = 25 + 10
+		sino 
+			si taman = 2 Entonces
+				ganancia = 25 + (20 *0.15) +5
+			FinSi
+		FinSi
+	SiNo
+		si tipo = "colorada" Entonces
+			si taman = 1 Entonces
+				ganancia = 25 -20
+			sino 
+				si taman = 2 Entonces
+					ganancia = 20 - (20 *0.2)
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	ganancia = ganancia - (ganancia *0.05)
+	ganancia= ganancia + (ganancia*0.12)
+FinFuncion
+Funcion ejercicio_10num
+	//La asociación de vinicultores tiene como política fijar un precio inicial al quintal de
+	//pitajaya, la cual se clasifica en tipos "Amarilla" y "Colorada", y además en tamaños 1 y 2.
+//	Cuando se realiza la venta del producto, ésta es de un solo tipo y tamaño, se requiere
+//	determinar cuánto recibirá un productor por la pitajaya que entrega en un embarque,
+	//considerando lo siguiente:
+//	? Si es de tipo Amarilla, se le cargan $10 al precio inicial cuando es de tamaño 1; y 15% mas $5
+//	si es de tamaño 2
+//	? Si es de tipo Colorada, se rebajan $20 cuando es de tamaño 1, y 20% cuando es de tamaño
+//	2. Sea tipo Amarilla y Colorada se debe se aplicar un descuento del 5% y el 12% del IVA.
+//	Realice un algoritmo para determinar el precio de embarque
+	//precio inicial= 25
+	definir tipo Como Caracter
+	definir taman Como Entero
+	Repetir
+		Escribir Sin Saltar "Ingrese el tipo de pitajaya Amarilla o Colorada: "
+		leer tipo
+		tipo= Minusculas(tipo)
+	Hasta Que tipo = "amarilla" o tipo= "colorada"
+	
+	Repetir
+		Escribir Sin Saltar "Ingrese el tamaño de la pitajaya 1 o 2: "
+		leer taman
+	Hasta Que taman = 1 o taman = 2
+	ganancia<- ganancia_pitajaya (tipo, taman)
+	Escribir "El valor de ganancia fue de: ", ganancia
+FinFuncion
 
 
 Funcion Ejercicio_11_de_21
@@ -703,19 +1087,21 @@ Funcion EVALUARNUM(num)
 		Mostrar "El numero es impar"
 		
 	FinSi
-
-Funcion Ejercicio_12_de_21
 	
-	Definir clave, materiaPrima, costoManoObra, costoFabricacion, costoProduccion, precioVenta Como Real
-    
-    Escribir "Ingrese la clave del artículo (1, 2, 3, 4, 5 o 6): "
-    Leer clave
-    
-    Escribir "Ingrese el costo de la materia prima: "
-    Leer materiaPrima
+FinFuncion
 	
-	CalcularCostoProduccionPrecioVenta(clave, materiaPrima)
-	
+	Funcion Ejercicio_12_de_21
+		
+		Definir clave, materiaPrima, costoManoObra, costoFabricacion, costoProduccion, precioVenta Como Real
+		
+		Escribir "Ingrese la clave del artículo (1, 2, 3, 4, 5 o 6): "
+		Leer clave
+		
+		Escribir "Ingrese el costo de la materia prima: "
+		Leer materiaPrima
+		
+		CalcularCostoProduccionPrecioVenta(clave, materiaPrima)
+		
 FinFuncion
 
 Funcion CalcularCostoProduccionPrecioVenta(clave, materiaPrima)
@@ -772,32 +1158,13 @@ Funcion DigitosDentroDeNumero(N, DigitosCadena)
 	
 FinFuncion
 
-Funcion Ejercicio_13_de_21
-	
-	Definir N, DigitosCadena como entero
-	
-	Escribir "Ingrese un número entero: "
-	Leer N
-	
-	DigitosDentroDeNumero(N, DigitosCadena)
-	
-FinFuncion
-
-Funcion DigitosDentroDeNumero(N, DigitosCadena)
-	
-	DigitosCadena = Longitud(ConvertirATexto(N))
-	
-	Escribir "El número ", N, " tiene ", DigitosCadena, " dígitos."
-	
-FinFuncion
-
 Funcion numm<-numcapicua(num)
 	numm<-trunc(num/100);
 FinFuncion
+
 Funcion nummm<-numcapicuaa(num)
 	numm<-num%10;
 FinFuncion
-
 
 Funcion code<-divisores(nume)
 	Para i<-1 Hasta nume Con Paso 1 Hacer
@@ -806,7 +1173,6 @@ Funcion code<-divisores(nume)
 		Fin Si
 	Fin Para
 FinFuncion
-
 
 Funcion codee<-sumdiv(numer)
 	Para indc<-2 Hasta numer Con Paso 1 Hacer
@@ -818,22 +1184,22 @@ Funcion codee<-sumdiv(numer)
 	Escribir "El total de la suma de los divisores del número ingresado es: ", sum;
 FinFuncion
 
-Funcion ejercicio_17
+Funcion Ejercicio_17
 	//17) Escribir un algoritmo que presente la cantidad de los divisores de un numero CON PARAMETROS RETORNO Y REUTILIZACION 
-	definir n , i , divisores Como Entero
-	n<- numero_positivo
-	divisores<- divisores_de_numero(n, perfecto)
-	Escribir "La cantidad de divisores de ", n, " es: ", divisores
+	definir n , i , divisoress Como Entero
+	n = numero_positivo
+	divisoress = divisores_de_numero(n, perfecto)
+	Escribir "La cantidad de divisores de ",n " es: ",divisoress
 FinFuncion
 
-Funcion ejercicio_18
+Funcion Ejercicio_18
 	// Escribir un algoritmo que indique si un número es perfecto
 	//Nota: un número es perfecto cuando la suma de los divisores del número incluido el 1 y
 	//excluido el propio número es igual al numero
 	//Ejemplo: numero=6: los divisores del 6 son: 1+2+3=6
-	definir n , i , perfecto, divisores Como Entero
-	n<- numero_positivo
-	divisores<- divisores_de_numero(n, perfecto)
+	definir n , i , perfecto, divisoress Como Entero
+	n = numero_positivo
+	divisoress = divisores_de_numero(n, perfecto)
 	si perfecto = n Entonces
 		Escribir n," es perfecto"
 	SiNo
@@ -841,29 +1207,31 @@ Funcion ejercicio_18
 	FinSi
 FinFuncion
 
-funcion ejercicio_19
+Funcion Ejercicio_19
 	// Dado un número N determinar si es un número primo.
 	//Nota: Un número primo es aquel que solo es divisible por 1(uno) y por el mismo.
-	definir n , i , divisores Como Entero
+	definir n , i , divisoress Como Entero
 	n<- numero_positivo
-	divisores<- divisores_de_numero(n, perfecto)
-	si divisores = 2 Entonces
+	divisoress<- divisores_de_numero(n, perfecto)
+	si divisoress = 2 Entonces
 		Escribir n," es primo"
 	SiNo
 		Escribir n, " no es primo"
 	FinSi
-Funcion divisores<- divisores_de_numero(n, perfecto Por Referencia)
-	definir divisores, i Como Entero
-	divisores<-0
-	perfecto=0
-	para i<-1 hasta n Hacer
-		si n mod i = 0 Entonces
-			Escribir i, " es divisible entre ", n
-			divisores= divisores + 1
-			perfecto= perfecto + (n/i)
-		FinSi
-	FinPara
-	perfecto= perfecto-n
+FinFuncion
+	Funcion divisoress = divisores_de_numero(n, perfecto Por Referencia)
+		definir divisoress, i Como Entero
+		divisoress=0
+		perfecto=0
+		para i<-1 hasta n Hacer
+			si n mod i = 0 Entonces
+				Escribir i, " es divisible entre ", n
+				divisoress= divisoress + 1
+				perfecto= perfecto + (n/i)
+			FinSi
+		FinPara
+		perfecto= perfecto-n
+		
 FinFuncion
 
 Funcion NumIng<- numero_positivo
@@ -1150,10 +1518,10 @@ funcion almacenador<- contador_caracter(frase1, frase2, almacenador2 Por Referen
 				si caracteres_palabra = "a" o caracteres_palabra ="e" o caracteres_palabra ="i" o caracteres_palabra ="o" o caracteres_palabra ="u" y x=2 Entonces
 					vocales1= vocales1 + 1
 				sino 
-						si  caracteres_palabra = "1" o  caracteres_palabra = "2" o  caracteres_palabra = "3" o  caracteres_palabra = "4" o  caracteres_palabra="5" o  caracteres_palabra = "6" o  caracteres_palabra= "7" o  caracteres_palabra = "8" o  caracteres_palabra = "9" o  caracteres_palabra = "0"  y x=2 Entonces
-							digitos1= digitos1 + 1
-						SiNo
-							consonantes1= consonantes1+1
+					si  caracteres_palabra = "1" o  caracteres_palabra = "2" o  caracteres_palabra = "3" o  caracteres_palabra = "4" o  caracteres_palabra="5" o  caracteres_palabra = "6" o  caracteres_palabra= "7" o  caracteres_palabra = "8" o  caracteres_palabra = "9" o  caracteres_palabra = "0"  y x=2 Entonces
+						digitos1= digitos1 + 1
+					SiNo
+						consonantes1= consonantes1+1
 					FinSi
 				FinSi
 			FinSi
@@ -1168,9 +1536,9 @@ funcion almacenador<- contador_caracter(frase1, frase2, almacenador2 Por Referen
 FinFuncion
 
 funcion ejercicio_13
-//Dado dos números presentar los valores mayores a 5 entre ellos incluidos el numero inicial y final
-//Ejemplo: numero1=2 numero2=10
-//salida= 6 7 8 9 10
+	//Dado dos números presentar los valores mayores a 5 entre ellos incluidos el numero inicial y final
+	//Ejemplo: numero1=2 numero2=10
+	//salida= 6 7 8 9 10
 	definir n1, n2, n, x Como Entero
 	x=1
 	Escribir Sin Saltar "Ingrese un numero: "
@@ -1188,7 +1556,7 @@ funcion ejercicio_14
 	//calcular el promedio general de las edades de los alumnos
 	//La cantidad y el promedio de las edades mayores o iguales a 18
 	//La cantidad y el promedio de las edades menores a 18
-//Ejemplo:
+	//Ejemplo:
 	//Edades=[20,17,20,23]
 	//promedioGeneral=20
 	//cantMayorIgual18= 3, promedioMayorIgual18=21
@@ -1203,6 +1571,9 @@ funcion ejercicio_14
 		Repetir
 			Escribir Sin Saltar "Ingrese la edad del alumno ", i+1 ": "
 			leer e
+			Si e <= 5 Entonces
+				Mostrar "La edad debe ser mayor o igual a 5"
+			FinSi
 		Hasta Que e>=5
 		edades[i]<- e
 	FinPara
@@ -1259,7 +1630,7 @@ Funcion ejercicio_16
 	Escribir "El promedio general de los sueldos es de: ", (acumulador/empleados)
 FinFuncion
 
-Funcion ejercicio_17
+Funcion ejercicio_17_Arreglo
 	// Dadas dos frase indicar la de mayor longitud"
 	definir frase1, frase2 Como Caracter
 	definir x Como Entero
@@ -1282,7 +1653,7 @@ Funcion ejercicio_17
 	FinSi
 FinFuncion
 
-Funcion ejercicio_18
+Funcion ejercicio_18_Arreglo
 	//Indicar cuantas , . ; : hay en una cadena"
 	definir frase1 Como Caracter
 	definir x Como Entero
@@ -1294,7 +1665,7 @@ Funcion ejercicio_18
 	escribir "Su frase tiene , . ; : esta cantidad de veces: " ,almacenador3
 FinFuncion
 
-funcion ejercicio_19
+funcion ejercicio_19_Arreglo
 	//Dado una cadena indicar cuantas vocales, consonantes y dígitos hay
 	definir frase1 Como Caracter
 	definir x Como Entero
@@ -1364,7 +1735,7 @@ Funcion SumaDigitosCedula(Cedula)
 		Mostrar "La suma de los dígitos de la cédula ingresada es de: ",Digitos
 		
 	FinSi
-
+	
 	Si Longitud(Cedula) <> 10
 		
 		Mostrar "Dato inválido, (Una CI consta de 10 datos numéricos...)"
