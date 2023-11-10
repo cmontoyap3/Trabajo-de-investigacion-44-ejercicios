@@ -1384,7 +1384,7 @@ FinFuncion
 Funcion sumatorivega<-sumadelcuadradodelejercicio6(jiso, ndy)
 	Para i<-1 Hasta ndy Con Paso 1 Hacer
 		elevao=(jiso(i))^2;
-		sumatorivega=sumatoriaz+elevao;
+		sumatorivega=sumatorivega+elevao;
 	Fin Para
 FinFuncion
 
