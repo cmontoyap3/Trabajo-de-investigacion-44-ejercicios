@@ -725,19 +725,19 @@ FinFuncion
 Funcion ganancia<- ganancia_uva (tipo, taman)
 	si tipo = "a" o tipo= "A"
 		si taman = 1 Entonces
-			ganancia = 20 + 20
+			ganancia = 100 + 20
 		sino 
 			si taman = 2 Entonces
-				ganancia = 20 + 30
+				ganancia = 100 + 30
 			FinSi
 		FinSi
 	SiNo
 		si tipo = "b" o tipo = "B" Entonces
 			si taman = 1 Entonces
-				ganancia = 20 + 30
+				ganancia = 100 - 30
 			sino 
 				si taman = 2 Entonces
-					ganancia = 20 + 50
+					ganancia = 100 - 50
 				FinSi
 			FinSi
 		FinSi
